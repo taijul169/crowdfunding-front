@@ -1,7 +1,38 @@
-import React from 'react';
-import Singleinput from '../mini-components/Singleinput'
+import React,{useState} from 'react';
+import Singleinput from '../mini-components/Singleinput';
+
 
 const Form = () => {
+    var display1 = '';
+    var display2 = '';
+    const [state, setstate] = useState(null)
+    const [stateSecond, setstateSecond] = useState(null)
+    const  imageHandler = (e)=>{
+        
+       const reader = new FileReader();
+       reader.onload = ()=>{
+        
+           if(reader.readyState === 2){
+               setstate(reader.result);
+              
+           }
+           display1='d-block';
+
+       }
+       reader.readAsDataURL(e.target.files[0])
+
+   }
+   const imageHandlerNidBack =(e)=>{
+    const reader = new FileReader();
+    reader.onload = ()=>{
+        if(reader.readyState === 2){
+            setstateSecond(reader.result);
+        }
+    }
+    reader.readAsDataURL(e.target.files[0])
+
+   }
+
     return (
         <div>
             <div className="form-wrapper section-padding">
@@ -65,21 +96,17 @@ const Form = () => {
                                         name={'dateOfBirth'}
                                         mandetory={'mandetory'}
                                     />
-                                     <Singleinput 
-                                        labelName={'NID Front'} 
-                                        col={'col-md-6 col-lg-6 col-12 '} 
-                                        type={'file'}
-                                        name={'NIDfront'}
-                                        mandetory={'mandetory'}
-                                    />
-                                     <Singleinput 
-                                        labelName={'NID Back'} 
-                                        col={'col-md-6 col-lg-6 col-12 '} 
-                                        type={'file'}
-                                        name={'NIDBack'}
-                                        mandetory={'mandetory'}
-                                    />
-
+                                   
+                                     <div className={`form-group col-md-6 col-lg-6 col-12 `}>
+                                        <label for="refId"className="mandetory">NID Front</label>
+                                        <input type="file" className="form-control" id="inputEmail4" placeholder="" name="NIDfront" accept="image/*" onChange={imageHandler}/>
+                                        <div className={`image-upload-box w-50 ${display1}` } style={{backgroundImage:`url(${state})`,backgroundSize:'cover',backgroundPosition:"center"}}></div>
+                                     </div>
+                                     <div className={`form-group col-md-6 col-lg-6 col-12 `}>
+                                        <label for="refId"className="mandetory">NID Back</label>
+                                        <input type="file" className="form-control" id="inputEmail4" placeholder="" name="NIDfront" accept="image/*" onChange={imageHandlerNidBack}/>
+                                        <div className={`image-upload-box w-50 ${display2}` } style={{backgroundImage:`url(${stateSecond})`,backgroundSize:'cover',backgroundPosition:"center"}}></div>
+                                     </div>
                                 </div>
                             </div>
                             <div className="single-box-wrap mb-5">
