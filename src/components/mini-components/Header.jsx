@@ -17,8 +17,9 @@ const Header = () => {
                           <div className="navigation h-100 d-flex align-items-center">
                               <nav>
                                   <ul>
-                                      <li><NavLink to="signin">Login</NavLink></li>
-                                      <li><NavLink to="signup">Register</NavLink></li>
+                                      <li><NavLink to="/signin">Login</NavLink></li>
+                                      <li><NavLink to="/signup">Register</NavLink></li>
+                                      <li><NavLink to="/dashboard">DB</NavLink></li>
                                   </ul>
                               </nav>
                           </div>
