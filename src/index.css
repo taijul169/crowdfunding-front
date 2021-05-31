@@ -157,12 +157,13 @@ body a:hover{
 
 }
 .proImg-wrap {
-	height: 175px;
-
+	height: 190px;
+	width: 225px;
+	margin-left: auto;
 }
 .proImg-wrap img {
 	height: 100%;
-	width: 272px;
+	width: 100%;
 	border-radius: 3px;
 	border: 5px solid #0c5454;
 	padding: 6px;
@@ -201,3 +202,72 @@ body a:hover{
 	background: #000;
 	opacity: 0.5;
 }
+
+.infoBox-right {
+	text-align: right;
+}
+.infoBox-right h4 {
+	padding: 8px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+}
+.infoBox-right h2 {
+	font-size: 28px;
+}
+/* ================================================responsive-design start =================================================*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.navigation nav ul li a {
+		padding: 5px 12px;
+		font-size: 12px;
+	}
+	.formheading {
+		font-size: 18px;
+	}
+	.single-box-wrap .form-control {
+		font-size: 12px;
+	}
+	.form-wrapper form .form-group label {
+		font-size: 14px;
+	}
+	.primary-button {
+		font-size: 10px;
+	}
+	.userprofileWrap .card {
+		margin-bottom: 15px;
+	}
+	.userprofileWrap.section-padding .heading {
+		font-size: 16px;
+	}
+	.infoBox-right {
+		text-align: center;
+	}
+	.proImg-wrap {
+		margin: 0 auto;
+	}
+	.infoBox-wrap table {
+		font-size: 80%;
+	}
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+	
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+	
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+	
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+	
+  }

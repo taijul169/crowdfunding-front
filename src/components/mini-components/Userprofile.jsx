@@ -13,7 +13,7 @@ const Userprofile = () => {
           <div className="container">
               <h2 className="heading">Profile Info</h2>
               <div className="row p-3 custom-bg">
-                  <div className="col-md-8 col-lg-8 col-12 col-sm-6">
+                  <div className="col-md-8 col-lg-8 col-12 col-sm-6 order-2 order-lg-1 order-md-1">
                       <div className="infoBox-wrap">
                          <table className="table">
                              <tr><th>Name</th><td>Tariq Khan</td></tr>
@@ -27,14 +27,14 @@ const Userprofile = () => {
                          </table>
                       </div>
                   </div>
-                  <div className="col-md-4 col-lg-4 col-12 col-sm-6">
-                      <div className="infoBox-right text-right">
-                        <h2 className="my-2">ID: <span>CC06210010001</span></h2>
+                  <div className="col-md-4 col-lg-4 col-12 col-sm-6 order-lg-0 order-md-2 order-lg-2">
+                      <div className="infoBox-right">
+                        <h2 className="my-2">ID: CC06210010001</h2>
                         <div className="proImg-wrap">
                             <img src={ProImg} alt="proimg" className="img-fluid" />
                         </div>
                         <h4>Md.Tariqul Islam</h4>
-                        
+
                       </div>
                   </div>
               </div>

@@ -8,12 +8,12 @@ const Header = () => {
             <header>
               <div className="container">
                   <div className="row">
-                      <div className="col-md-4 col-sm-4 col-lg-4">
+                      <div className="col-md-4 col-sm-4 col-lg-4 col-4">
                           <div className="brand-logo-wrap">
                               <NavLink to="/"><img className="img-fluid" src={logo} alt="logo.png" /></NavLink>
                           </div>
                       </div>
-                      <div className="col-md-8 col-sm-8 col-lg-8">
+                      <div className="col-md-8 col-sm-8 col-lg-8 col-8">
                           <div className="navigation h-100 d-flex align-items-center">
                               <nav>
                                   <ul>
