@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+:root {
+	--theme-primaryColor: #024649;
+	--hoverColor: #222222;
+	--textColor: #171717;
+	position: inherit;
+
+  }
+
+body{
+  margin: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif !important;
+  overflow-x: hidden;
+  
+}
+body input:focus{
+	border-bottom: 1px solid var(--theme-primaryColor);
+	outline: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+.section-padding{
+	padding: 50px 0px;
+}
+input:focus,textarea:focus{
+  outline: none;
+}
+body a:hover{
+	text-decoration: none;
+}
+
+/*================== header-start =========================*/
+.brand-logo-wrap img {
+	width: 100px;
+}
+.header-section {
+	background:var(--theme-primaryColor);
+}
+.navigation nav {
+	width: 365px;
+	margin-left: auto;
+	text-align: right;
+}
+.navigation nav ul li {
+	display: inline-block;
+}
+
+.navigation nav ul li a {
+	padding: 5px 25px;
+	display: block;
+	color: #FFF;
+	font-weight: 500;
+	border: 1px solid #FFF;
+	border-radius: 3px;
+	margin: 5px;
+	transition: 0.3s ease-in-out;
+}
+.navigation nav ul li a:hover{
+	color: var(--theme-primaryColor);
+	background-color: #FFF;
+}
+.navigation nav ul{
+	margin-bottom: 0;
+}
+.heroSection {
+	height: 655px;
+	display: flex;
+	align-items: center;
+}
+.hero-content-left{
+	font-family: 'Roboto', sans-serif !important;
+}
+.hero-content-left h1 span {
+	display: block;
+	color: var(--theme-primaryColor);
+}
+.hero-content-left h1 {
+	font-weight: 900;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.primary-button {
+	color: #FFF;
+	background: var(--theme-primaryColor);
+	padding: 8px 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	display: inline-block;
+	position: relative;
+	transition: all 0.3s ease-in;
+	font-size: 15px;
+}
+.primary-button::before {
+	position: absolute;
+	content: "";
+	width: 18%;
+	height: 75%;
+	left: -6px;
+	top: -6px;
+	border-top: 1px solid var(--theme-primaryColor);
+	border-left: 1px solid var(--theme-primaryColor);
+	transition: all 0.3s ease-in;
+}
+.primary-button::after {
+	position: absolute;
+	content: "";
+	width: 18%;
+	height: 75%;
+	right: -6px;
+	bottom: -6px;
+	border-bottom: 1px solid var(--theme-primaryColor);
+	border-right: 1px solid var(--theme-primaryColor);
+	transition: all 0.3s ease-in;
+}
+.primary-button:hover:after,.primary-button:hover::before{
+	width: 95%;
+	height: 95%;
+}
+.primary-button:hover{
+	color: #FFF;
+	background-color: #222222;
+}
+.form-wrapper h2 {
+	display: block;
+	background-color: var(--theme-primaryColor);
+	padding: 20px;
+	color: #FFF;
+}
+.mandetory{
+	position: relative;
+}
+.mandetory::before {
+	position: absolute;
+	content: '*';
+	color: #e23737;
+	top: 0px;
+	right: -12px;
+	font-size: 24px;
+}
+.form-wrapper form .form-group label {
+	font-weight: 500;
+}
+.form-wrapper.section-padding form {
+	border: 5px solid var(--theme-primaryColor);
+	padding: 30px;
+}
+.formheading {
+	font-weight: 600;
+	display: inline-block;
+
+}
+.proImg-wrap {
+	height: 175px;
+
+}
+.proImg-wrap img {
+	height: 100%;
+	width: 272px;
+	border-radius: 3px;
+	border: 5px solid #0c5454;
+	padding: 6px;
+}
+.userprofileWrap.section-padding .heading {
+	background: #0c5454;
+	padding: 10px 20px;
+	color: #FFF;
+	font-size: 24px;
+	text-transform: uppercase;
+	
+}
+.userprofileWrap{
+	background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.16' fill='%23222222' cx='45' cy='45' r='5'/%3E%3Cg fill='%23ffffff' fill-opacity='0.16'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+.row.custom-bg {
+	background-color: #fff;
+	margin-left: 0;
+	margin-right: 0;
+	border: 4px solid var(--theme-primaryColor);
+}
+.card-img-wrap{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.card-img-wrap::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
