@@ -19,7 +19,7 @@ const Header = () => {
                                   <ul>
                                       <li><NavLink to="/signin">Login</NavLink></li>
                                       <li><NavLink to="/signup">Register</NavLink></li>
-                                      <li><NavLink to="/dashboard">DB</NavLink></li>
+                                      
                                   </ul>
                               </nav>
                           </div>
